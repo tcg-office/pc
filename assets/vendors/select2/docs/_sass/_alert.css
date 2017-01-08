@@ -1,0 +1,39 @@
+.alert {
+  background: #fff;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  color: #333;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.alert h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.alert-danger {
+  border-left-color: #ce4844;
+}
+
+.alert-danger h4 {
+  color: #ce4844;
+}
+
+.alert-info {
+  border-left-color: #1b809e;
+}
+
+.alert-info h4 {
+  color: #1b809e;
+}
+
+.alert-warning {
+  border-left-color: #aa6708;
+}
+
+.alert-warning h4 {
+  color: #aa6708;
+}

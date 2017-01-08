@@ -1,0 +1,141 @@
+<h1 id="contributing-to-select2">Contributing to Select2</h1>
+<p>Looking to contribute something to Select2? <strong>Here&#39;s how you can help.</strong></p>
+<p>Please take a moment to review this document in order to make the contribution
+process easy and effective for everyone involved.</p>
+<p>Following these guidelines helps to communicate that you respect the time of
+the developers managing and developing this open source project. In return,
+they should reciprocate that respect in addressing your issue or assessing
+patches and features.</p>
+<h2 id="using-the-issue-tracker">Using the issue tracker</h2>
+<p>When <a href="#reporting-bugs-with-select2">reporting bugs</a> or
+<a href="#requesting-features-in-select2">requesting features</a>, the
+<a href="https://github.com/select2/select2/issues">issue tracker on GitHub</a> is the recommended channel to use.</p>
+<p>The issue tracker <strong>is not</strong> a place for support requests. The
+<a href="https://select2.github.io/community.html">mailing list</a> or <a href="https://select2.github.io/community.html">IRC channel</a> are better places to
+get help.</p>
+<h2 id="reporting-bugs-with-select2">Reporting bugs with Select2</h2>
+<p>We really appreciate clear bug reports that <em>consistently</em> show an issue
+<em>within Select2</em>.</p>
+<p>The ideal bug report follows these guidelines:</p>
+<ol>
+<li><strong>Use the <a href="https://github.com/select2/select2/search?q=&amp;type=Issues">GitHub issue search</a></strong>  &mdash; Check if the issue
+has already been reported.</li>
+<li><strong>Check if the issue has been fixed</strong>  &mdash; Try to reproduce the problem
+using the code in the <code>master</code> branch.</li>
+<li><strong>Isolate the problem</strong>  &mdash; Try to create an
+<a href="http://css-tricks.com/6263-reduced-test-cases/">isolated test case</a> that consistently reproduces the problem.</li>
+</ol>
+<p>Please try to be as detailed as possible in your bug report, especially if an
+isolated test case cannot be made. Some useful questions to include the answer
+to are:</p>
+<ul>
+<li>What steps can be used to reproduce the issue?</li>
+<li>What is the bug and what is the expected outcome?</li>
+<li>What browser(s) and Operating System have you tested with?</li>
+<li>Does the bug happen consistently across all tested browsers?</li>
+<li>What version of jQuery are you using? And what version of Select2?</li>
+<li>Are you using Select2 with other plugins?</li>
+</ul>
+<p>All of these questions will help others fix and identify any potential bugs.</p>
+<h2 id="requesting-features-in-select2">Requesting features in Select2</h2>
+<p>Select2 is a large library that carries with it a lot of functionality. Because
+of this, many feature requests will not be implemented in the core library.</p>
+<p>Before starting work on a major feature for Select2, <strong>contact the
+<a href="https://select2.github.io/community.html">community</a> first</strong> or you may risk spending a considerable amount of
+time on something which the project developers are not interested in bringing
+into the project.</p>
+<h2 id="contributing-changes-to-select2">Contributing changes to Select2</h2>
+<p>Select2 is made up of multiple submodules that all come together to make the
+standard and extended builds that are available to users. The build system uses
+Node.js to manage and compile the submodules, all of which is done using the
+Grunt build system.</p>
+<h3 id="installing-development-dependencies">Installing development dependencies</h3>
+<p>Select2 can be built and developed on any system which supports Node.js. The
+preferred Node.js version is 0.10, but 0.12 and later versions can be used
+without any noticeable issues. You can download Node.js at
+<a href="https://nodejs.org/">their website</a>.</p>
+<p>All other required Node.js packages can be installed using <a href="https://www.npmjs.com/">npm</a>, which
+comes bundled alongside Node.js.</p>
+<pre><code class="lang-bash">cd /path/to/select2/repo
+npm install
+</code></pre>
+<p>You may need to install libsass on your system if it is not already available
+in order to build the SASS files which generate the CSS for themes and the main
+component.</p>
+<p>In order to build and serve the documentation, you need to have <a href="https://jekyllrb.com/docs/installation/">Jekyll</a>
+installed on your system.</p>
+<h3 id="building-the-select2-component">Building the Select2 component</h3>
+<p>Select2 uses the <a href="http://gruntjs.com/">Grunt</a> build task system and defines a few custom
+tasks for common routines. One of them is the <code>compile</code> task, which compiles
+the JavaScript and CSS and produces the final files.</p>
+<pre><code class="lang-bash">cd /path/to/select2/repo
+grunt compile
+</code></pre>
+<p>You can also generate the minified versions (<code>.min.js</code> files) by executing the
+<code>minify</code> task after compiling.</p>
+<pre><code class="lang-bash">cd /path/to/select2/repo
+grunt minify
+</code></pre>
+<h3 id="building-the-documentation">Building the documentation</h3>
+<p>Using the Grunt build system, you run Jekyll and serve the documentation
+locally. This will also set up the examples to use the latest version of
+Select2 that has been built.</p>
+<pre><code class="lang-bash">cd /path/to/select2/repo
+grunt docs
+</code></pre>
+<h3 id="running-tests">Running tests</h3>
+<p>Select2 uses the QUnit test system to test individual components.</p>
+<pre><code class="lang-bash">cd /path/to/selct2/repo
+grunt test
+</code></pre>
+<h3 id="submitting-a-pull-request">Submitting a pull request</h3>
+<p>We use GitHub&#39;s pull request system for submitting patches. Here are some
+guidelines to follow when creating the pull request for your fix.</p>
+<ol>
+<li>Make sure to create a ticket for your pull request. This will serve as the
+bug ticket, and any discussion about the bug will take place there. Your pull
+request will be focused on the specific changes that fix the bug.</li>
+<li>Make sure to reference the ticket you are fixing within your pull request.
+This will allow us to close off the ticket once we merge the pull request, or
+follow up on the ticket if there are any related blocking issues.</li>
+<li>Explain why the specific change was made. Not everyone who is reviewing your
+pull request will be familiar with the problem it is fixing.</li>
+<li>Run your tests first. If your tests aren&#39;t passing, the pull request won&#39;t
+be able to be merged. If you&#39;re breaking existing tests, make sure that you
+aren&#39;t causing any breaking changes.</li>
+<li>Only include source changes. While it&#39;s not required, only including changes
+from the <code>src</code> directory will prevent merge conflicts from occuring. Making
+this happen can be as a simple as not committing changes from the <code>dist</code>
+directory.</li>
+</ol>
+<p>By following these steps, you will make it easier for your pull request to be
+reviewed and eventually merged.</p>
+<h2 id="triaging-issues-and-pull-requests">Triaging issues and pull requests</h2>
+<p>Anyone can help the project maintainers triage issues and review pull requests.</p>
+<h3 id="handling-new-issues">Handling new issues</h3>
+<p>Select2 regularly receives new issues which need to be tested and organized.</p>
+<p>When a new issue that comes in that is similar to another existing issue, it
+should be checked to make sure it is not a duplicate.  Duplicates issues should
+be marked by replying to the issue with &quot;Duplicate of #[issue number]&quot; where
+<code>[issue number]</code> is the url or issue number for the existing issue.  This will
+allow the project maintainers to quickly close off additional issues and keep
+the discussion focused within a single issue.</p>
+<p>If you can test issues that are reported to Select2 that contain test cases and
+confirm under what conditions bugs happen, that will allow others to identify
+what causes a bug quicker.</p>
+<h3 id="reviewing-pull-requests">Reviewing pull requests</h3>
+<p>It is very common for pull requests to be opened for issues that contain a clear
+solution to the problem.  These pull requests should be rigorously reviewed by
+the community before being accepted.  If you are not sure about a piece of
+submitted code, or know of a better way to do something, do not hesitate to make
+a comment on the pull request.</p>
+<h3 id="reviving-old-tickets">Reviving old tickets</h3>
+<p>If you come across tickets which have not been updated for a while, you are
+encouraged to revive them. While this can be as simple as saying <code>:+1:</code>, it is
+best if you can include more information on the issue. Common bugs and feature
+requests are more likely to be fixed, whether it is by the community or the
+developers, so keeping tickets up to date is encouraged.</p>
+<h2 id="licensing">Licensing</h2>
+<p>It should also be made clear that <strong>all code contributed to Select</strong> must be
+licensable under the <a href="https://github.com/select2/select2/blob/master/LICENSE.md">MIT license</a>.  Code that cannot be released
+under this license <strong>cannot be accepted</strong> into the project.</p>
