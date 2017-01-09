@@ -332,6 +332,16 @@
                                         </div>
                                     </div>
                                     <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Describe yourself</label>
+                                                <div class="form-group label-static">
+                                                    <textarea class="form-control" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="col-md-12"><h5><i class="material-icons">person_outline</i> Social accounts</h5></div>
                                     </div>
                                     <div class="row">
@@ -373,66 +383,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12"><h5><i class="material-icons">location_on</i> Location</h5></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group label-static">
-                                                <label class="control-label">Address</label>
-                                                <input type="text" class="form-control" value="28201 E. Bonanza St.">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="form-group label-static">
-                                                <label class="control-label">City</label>
-                                                <input type="text" class="form-control" value="South Park">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group label-static">
-                                                <label class="control-label">Zip</label>
-                                                <input type="text" class="form-control" >
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group label-static">
-                                                <label class="control-label">State</label>
-                                                <select class="form-control select select2" style="width: 100%;">
-                                                    <option value="" selected="selected">Start typing...</option>
-                                                    <option>Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                    <option>Colorado</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group label-static">
-                                                <label class="control-label">Country</label>
-                                                <input type="text" class="form-control" value="United States" disabled="disabled">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group label-static">
-                                                <label class="control-label">Describe yourself</label>
-                                                <div class="form-group label-static">
-                                                    <textarea class="form-control" rows="5"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <hr />
                                     <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
                                     <div class="clearfix"></div>
                                 </form>
@@ -448,7 +399,7 @@
                                 <input name="email" value="" type="hidden">
                                 <input type="file" name="avatar_upload" id="avatar_upload" style="display:none;">
                             </form>
-                            <div class="card-image">
+                            <div class="card-image avatar_img">
                                 <a href="#" class="avatar_img">
                                     <img class="img" src="../assets/img/faces/oscar.jpg" />
                                 </a>
@@ -508,7 +459,7 @@
         weekStart:1
     });
 
-    $('a.avatar_img').click(function(event){
+    $('.avatar_img').click(function(event){
         event.preventDefault();
         $('#avatar_form').find('#avatar_upload').click();
     });
