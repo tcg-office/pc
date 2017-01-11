@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>PageCeleb - Brand Messages</title>
+    <title>PageCeleb - Messages</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
@@ -65,9 +65,12 @@
 
     <style type="text/css">
         .content {
-            margin-top: 40px;
             padding: 30px 15px;
             min-height: calc(100% - 123px);
+        }
+
+        .navbar.navbar-transparent {
+            padding:0;
         }
 
         @media (max-width: 1199px) {
@@ -179,86 +182,86 @@
         </div><!-- /.container-->
     </nav>
     <!-- end header -->
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-transparent navbar-absolute">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Messages</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
     <div class="content">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card card-nav-tabs">
-                    <div class="card-header" data-background-color="navy-blue">
-                        <div class="nav-tabs-navigation">
-                            <div class="nav-tabs-wrapper">
-                                <ul class="nav nav-tabs" data-tabs="tabs">
-                                    <li>
-                                        <a href="brand-messages-inbox.html">
-                                            <i class="material-icons">inbox</i>
-                                            Inbox
-                                            <div class="ripple-container"></div></a>
-                                    </li>
-                                    <li>
-                                        <a href="brand-messages-sent.html">
-                                            <i class="material-icons">email</i>
-                                            Sent
-                                            <div class="ripple-container"></div></a>
-                                    </li>
-                                    <li class="active">
-                                        <a href="brand-messages-compose.html">
-                                            <i class="material-icons">textsms</i>
-                                            Compose
-                                            <div class="ripple-container"></div></a>
-                                    </li>
-                                </ul>
-                            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-transparent">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Messages</a>
                         </div>
                     </div>
-                    <div class="row card-content">
-                        <div class="col-md-10 col-md-offset-1">
-                            <div class="media-area">
-                                <h3 class="title text-center">Create new message </h3>
-                                <div class="alert alert-warning">
-                                    <div class="container-fluid">
-                                        <div class="alert-icon">
-                                            <i class="material-icons">warning</i>
-                                        </div>
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
-                                        </button>
-                                        <b>Note:</b> You may only message users who appear in your inbox
-                                    </div>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-nav-tabs">
+                        <div class="card-header" data-background-color="navy-blue">
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li>
+                                            <a href="brand-messages-inbox.html">
+                                                <i class="material-icons">inbox</i>
+                                                Inbox
+                                                <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="brand-messages-sent.html">
+                                                <i class="material-icons">email</i>
+                                                Sent
+                                                <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="brand-messages-compose.html">
+                                                <i class="material-icons">textsms</i>
+                                                Compose
+                                                <div class="ripple-container"></div></a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group label-static">
-                                            <label class="control-label">Select user</label>
-                                            <select class="form-control select select2" style="width: 100%;">
-                                                <option value="" selected="selected">Start typing...</option>
-                                                <option value="">Adam West</option>
-                                                <option value="">Jessica St. Patrick</option>
-                                            </select>
+                            </div>
+                        </div>
+                        <div class="row card-content">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="media-area">
+                                    <h3 class="title text-center">Create new message </h3>
+                                    <div class="alert alert-warning">
+                                        <div class="container-fluid">
+                                            <div class="alert-icon">
+                                                <i class="material-icons">warning</i>
+                                            </div>
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                                            </button>
+                                            <b>Note:</b> You may only message users who appear in your inbox
                                         </div>
                                     </div>
-                                </div>
-                                <div class="media media-post">
-                                    <a class="pull-left author" href="inf-profile.html">
-                                        <div class="avatar">
-                                            <img class="media-object" alt="64x64" src="../assets/img/faces/oscar.jpg">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Select user</label>
+                                                <select class="form-control select select2" style="width: 100%;">
+                                                    <option value="" selected="selected">Start typing...</option>
+                                                    <option value="">Adam West</option>
+                                                    <option value="">Jessica St. Patrick</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                    </a>
-                                    <div class="media-body">
-                                        <div class="form-group is-empty"><textarea class="form-control" placeholder="Write something meaningful..." rows="4"></textarea><span class="material-input"></span></div>
-                                        <div class="media-footer">
-                                            <a href="#pablo" class="btn btn-primary pull-right">
-                                                <i class="material-icons">textsms</i> Send message
-                                            </a>
+                                    </div>
+                                    <div class="media media-post">
+                                        <a class="pull-left author" href="inf-profile.html">
+                                            <div class="avatar">
+                                                <img class="media-object" alt="64x64" src="../assets/img/faces/oscar.jpg">
+                                            </div>
+                                        </a>
+                                        <div class="media-body">
+                                            <div class="form-group is-empty"><textarea class="form-control" placeholder="Write something meaningful..." rows="4"></textarea><span class="material-input"></span></div>
+                                            <div class="media-footer">
+                                                <a href="#pablo" class="btn btn-primary pull-right">
+                                                    <i class="material-icons">textsms</i> Send message
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

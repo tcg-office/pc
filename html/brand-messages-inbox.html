@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>PageCeleb - Brand Messages</title>
+    <title>PageCeleb - Messages</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
@@ -65,9 +65,16 @@
 
     <style type="text/css">
         .content {
-            margin-top: 40px;
             padding: 30px 15px;
             min-height: calc(100% - 123px);
+        }
+
+        .navbar.navbar-transparent {
+            padding:0;
+        }
+
+        .table-responsive {
+            border: none;
         }
     </style>
 
@@ -167,168 +174,168 @@
         </div><!-- /.container-->
     </nav>
     <!-- end header -->
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-transparent navbar-absolute">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Messages</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
     <div class="content">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card card-nav-tabs">
-                    <div class="card-header" data-background-color="navy-blue">
-                        <div class="nav-tabs-navigation">
-                            <div class="nav-tabs-wrapper">
-                                <ul class="nav nav-tabs" data-tabs="tabs">
-                                    <li class="active">
-                                        <a href="brand-messages-inbox.html">
-                                            <i class="material-icons">inbox</i>
-                                            Inbox
-                                        <div class="ripple-container"></div></a>
-                                    </li>
-                                    <li>
-                                        <a href="brand-messages-sent.html">
-                                            <i class="material-icons">email</i>
-                                            Sent
-                                        <div class="ripple-container"></div></a>
-                                    </li>
-                                    <li>
-                                        <a href="brand-messages-compose.html">
-                                            <i class="material-icons">textsms</i>
-                                            Compose
-                                        <div class="ripple-container"></div></a>
-                                    </li>
-                                </ul>
-                            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-transparent">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Messages</a>
                         </div>
                     </div>
-                    <div class="card-content table-responsive">
-                        <table class="table table-hover">
-                            <thead class="text-info">
-                                <th>
-                                    <div class="checkbox th-checkbox">
-                                        <label>
-                                            <input type="checkbox" name="optionsCheckboxes">
-                                        </label>
-                                    </div>
-                                </th>
-                                <th class="col-md-1"><span class="pull-right">From</span> </th>
-                                <th class="col-md-2"></th>
-                                <th class="col-md-3">Subject</th>
-                                <th class="col-md-1">Received</th>
-                                <th>Excerpt</th>
-                                <th>Actions</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox">
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-nav-tabs">
+                        <div class="card-header" data-background-color="navy-blue">
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li class="active">
+                                            <a href="brand-messages-inbox.html">
+                                                <i class="material-icons">inbox</i>
+                                                Inbox
+                                            <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="brand-messages-sent.html">
+                                                <i class="material-icons">email</i>
+                                                Sent
+                                            <div class="ripple-container"></div></a>
+                                        </li>
+                                        <li>
+                                            <a href="brand-messages-compose.html">
+                                                <i class="material-icons">textsms</i>
+                                                Compose
+                                            <div class="ripple-container"></div></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-info">
+                                    <th>
+                                        <div class="checkbox th-checkbox">
                                             <label>
                                                 <input type="checkbox" name="optionsCheckboxes">
                                             </label>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <a href="#pablo">
-                                        <div class="avatar">
-                                            <img class="media-object avatar" alt="Tim Picture" src="../assets/img/faces/marc.jpg">
-                                        </div>
-                                        </a>
-                                    </td>
-                                    <td>Adam West</td>
-                                    <td><p><span class="label label-success">new</span> <a href="thread.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p></td>
-                                    <td>Nov 3, 2016</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel fermentum mauris, id dapibus nisl. Donec non augue eu augue fermentum laoreet eget et sem. </td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-xs" data-original-title="Reply to message">
-                                            <i class="material-icons">reply</i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="" data-toggle="modal" data-target="#smallAlertModal" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
-                                            <i class="material-icons">close</i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" name="optionsCheckboxes">
-                                            </label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href="#pablo">
-                                        <div class="avatar">
-                                            <img class="media-object avatar" alt="Tim Picture" src="../assets/img/faces/lisa.jpg">
-                                        </div>
-                                        </a>
-                                    </td>
-                                    <td>Jessica St.Patrick</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-                                    <td>Nov 3, 2016</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel fermentum mauris, id dapibus nisl. Donec non augue eu augue fermentum laoreet eget et sem. </td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-xs" data-original-title="Reply to message">
-                                            <i class="material-icons">reply</i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="" data-toggle="modal" data-target="#smallAlertModal" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
-                                            <i class="material-icons">close</i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" name="optionsCheckboxes">
-                                            </label>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <a href="#pablo">
-                                        <div class="avatar">
-                                            <img class="media-object avatar" alt="Tim Picture" src="../assets/img/faces/marc.jpg">
-                                        </div>
-                                        </a>
-                                    </td>
-                                    <td>Adam West</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
-                                    <td>Nov 3, 2016</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel fermentum mauris, id dapibus nisl. Donec non augue eu augue fermentum laoreet eget et sem. </td>
-                                    <td class="td-actions text-right">
-                                        <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-xs" data-original-title="Reply to message">
-                                            <i class="material-icons">reply</i>
-                                        </button>
-                                        <button type="button" rel="tooltip" title="" data-toggle="modal" data-target="#smallAlertModal" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
-                                            <i class="material-icons">close</i>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </th>
+                                    <th class="col-md-1"><span class="pull-right">From</span> </th>
+                                    <th class="col-md-2"></th>
+                                    <th class="col-md-3">Subject</th>
+                                    <th class="col-md-1">Received</th>
+                                    <th>Excerpt</th>
+                                    <th>Actions</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#pablo">
+                                            <div class="avatar">
+                                                <img class="media-object avatar" alt="Tim Picture" src="../assets/img/faces/marc.jpg">
+                                            </div>
+                                            </a>
+                                        </td>
+                                        <td>Adam West</td>
+                                        <td><p><span class="label label-success">new</span> <a href="thread.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p></td>
+                                        <td>Nov 3, 2016</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel fermentum mauris, id dapibus nisl. Donec non augue eu augue fermentum laoreet eget et sem. </td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-xs" data-original-title="Reply to message">
+                                                <i class="material-icons">reply</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="" data-toggle="modal" data-target="#smallAlertModal" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#pablo">
+                                            <div class="avatar">
+                                                <img class="media-object avatar" alt="Tim Picture" src="../assets/img/faces/lisa.jpg">
+                                            </div>
+                                            </a>
+                                        </td>
+                                        <td>Jessica St.Patrick</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                                        <td>Nov 3, 2016</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel fermentum mauris, id dapibus nisl. Donec non augue eu augue fermentum laoreet eget et sem. </td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-xs" data-original-title="Reply to message">
+                                                <i class="material-icons">reply</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="" data-toggle="modal" data-target="#smallAlertModal" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="optionsCheckboxes">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#pablo">
+                                            <div class="avatar">
+                                                <img class="media-object avatar" alt="Tim Picture" src="../assets/img/faces/marc.jpg">
+                                            </div>
+                                            </a>
+                                        </td>
+                                        <td>Adam West</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </td>
+                                        <td>Nov 3, 2016</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel fermentum mauris, id dapibus nisl. Donec non augue eu augue fermentum laoreet eget et sem. </td>
+                                        <td class="td-actions text-right">
+                                            <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-xs" data-original-title="Reply to message">
+                                                <i class="material-icons">reply</i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="" data-toggle="modal" data-target="#smallAlertModal" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
+                                                <i class="material-icons">close</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="pagination">
+                        <li><a href="javascript:void(0);">&lt; prev</a></li>
+                        <li><a href="javascript:void(0);">1</a></li>
+                        <li><a href="javascript:void(0);">2</a></li>
+                        <li class="active"><a href="javascript:void(0);">3</a></li>
+                        <li><a href="javascript:void(0);">4</a></li>
+                        <li><a href="javascript:void(0);">5</a></li>
+                        <li><a href="javascript:void(0);">next &gt;</a></li>
+                    </ul>
+                </div><!-- /.col-md-12 text-center -->
+            </div><!-- /.row -->
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="pagination">
-                    <li><a href="javascript:void(0);">&lt; prev</a></li>
-                    <li><a href="javascript:void(0);">1</a></li>
-                    <li><a href="javascript:void(0);">2</a></li>
-                    <li class="active"><a href="javascript:void(0);">3</a></li>
-                    <li><a href="javascript:void(0);">4</a></li>
-                    <li><a href="javascript:void(0);">5</a></li>
-                    <li><a href="javascript:void(0);">next &gt;</a></li>
-                </ul>
-            </div><!-- /.col-md-12 text-center -->
-        </div><!-- /.row -->
     </div>
     <footer class="footer footer-white">
         <div class="container">
