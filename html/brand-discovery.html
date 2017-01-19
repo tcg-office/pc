@@ -223,8 +223,8 @@
                             </p>
                             <p class="description">
                                 <button class="btn btn-white btn-sm btn-round">Profile</button>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -249,8 +249,8 @@
                             </p>
                             <p class="description">
                                 <a href="brand-inf-profile.html" class="btn btn-white btn-sm btn-round" role="button">Profile</a>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -276,8 +276,8 @@
                             </p>
                             <p class="description">
                                 <button class="btn btn-white btn-sm btn-round">Profile</button>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -302,8 +302,8 @@
                             </p>
                             <p class="description">
                                 <button class="btn btn-white btn-sm btn-round">Profile</button>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -330,8 +330,8 @@
                             </p>
                             <p class="description">
                                 <button class="btn btn-white btn-sm btn-round">Profile</button>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -356,8 +356,8 @@
                             </p>
                             <p class="description">
                                 <button class="btn btn-white btn-sm btn-round">Profile</button>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -382,8 +382,8 @@
                             </p>
                             <p class="description">
                                 <button class="btn btn-white btn-sm btn-round">Profile</button>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -408,8 +408,8 @@
                             </p>
                             <p class="description">
                                 <button class="btn btn-white btn-sm btn-round">Profile</button>
-                                <button class="btn btn-white btn-sm btn-round">Add to campaign</button>
-                                <button class="btn btn-white btn-sm btn-round"><i class="material-icons">message</i></button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#campaignsModal">Add to campaign</button>
+                                <button class="btn btn-white btn-sm btn-round" data-toggle="modal" data-target="#messageModal"><i class="material-icons">message</i></button>
                             </p>
                         </div>
                     </div>
@@ -660,6 +660,97 @@
             </div>
             <div class="modal-footer text-center">
                 <button type="button" class="btn btn-primary btn-round" data-dismiss="modal">Apply filter</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="campaignsModal" tabindex="-2" role="dialog" aria-labelledby="myCampaignsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notice" style="max-width:460px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                <h5 class="modal-title" id="myCampaignsModalLabel">Add to campaign</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="tabs text-center" role="tablist">
+                        <button class="btn btn-white btn-sm btn-round" role="tab" data-toggle="tab" data-target="#newCampaign">Existing campaign</button>
+                        <button class="btn btn-white btn-sm btn-round" role="tab" data-toggle="tab" data-target="#existingCampaign">New campaign</button>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane" id="newCampaign">
+                            <div id="newCampaign">
+                                <div class="form-group label-static">
+                                    <label class="control-label">Campaign Title</label>
+                                    <select class="form-control select select2" style="width: 100%;">
+                                        <option value="" selected="selected">Start typing...</option>
+                                        <option value="">Nike Running</option>
+                                        <option value="">Photo shoots in L.A.</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="existingCampaign">
+                            <div id="existingCampaign">
+                                <div class="form-group label-static">
+                                    <label class="control-label">Campaign Title</label>
+                                    <input type="title" class="form-control" placeholder="" style="margin-bottom:-1px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-primary btn-round" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="messageModal" tabindex="-3" role="dialog" aria-labelledby="myMessageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notice">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
+                <h5 class="modal-title" id="myMessageModalLabel">Create new message</h5>
+                <div class="alert alert-danger" style="margin-top:10px;">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">error</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons" style="font-size:20px; color:#FFF;">clear</i></span>
+                        </button>
+                        <b>Error:</b> An error has occurred, please check your input and try again.
+                    </div>
+                </div>
+                <div class="alert alert-success" style="margin-top:10px;">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">check</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons" style="font-size:20px; color:#FFF;">clear</i></span>
+                        </button>
+                        <b>Success:</b> Your message has been sent.
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Write something meaningful..." rows="6"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button class="btn btn-primary btn-round">Send message</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
