@@ -672,35 +672,43 @@
                 <h5 class="modal-title" id="myCampaignsModalLabel">Select a Campaign</h5>
             </div>
             <div class="modal-body">
-                <div>
-                    <div class="tabs text-center" role="tablist">
-                        <button class="btn btn-white btn-sm btn-round" role="tab" data-toggle="tab" data-target="#newCampaign">Existing campaign</button>
-                        <button class="btn btn-white btn-sm btn-round" role="tab" data-toggle="tab" data-target="#existingCampaign">New campaign</button>
-                    </div>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane" id="newCampaign">
-                            <div class="form-group label-static">
-                                <label class="control-label">Campaign Title</label>
-                                <select class="form-control select select2" style="width: 100%;">
-                                    <option value="" selected="selected">Start typing...</option>
-                                    <option value="">Nike Running</option>
-                                    <option value="">Photo shoots in L.A.</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="existingCampaign">
-                            <div class="form-group label-static">
-                                <label class="control-label">Campaign Title</label>
-                                <input type="title" class="form-control" placeholder="" style="margin-bottom:-1px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <button class="btn btn-primary btn-round" data-dismiss="modal">Add to Campaign</button>
-                    </div>
-                </div>
+            	<div class="row">
+            		<div class="col-md-12">
+            			<div class="text-center">
+            				<ul class="nav nav-pills nav-modal" style="display:inline-block;">
+            					<li class="active">
+            						<a href="#newCampaign" data-toggle="tab">Existing campaign</a>
+            					</li>
+            					<li>
+            						<a href="#existingCampaign" data-toggle="tab">New campaign</a>
+            					</li>
+            				</ul>
+            			</div>
+            			<div class="tab-content tab-space">
+            				<div class="tab-pane active" id="newCampaign">
+            				  <div class="form-group label-static">
+            					  <label class="control-label">Campaign Title</label>
+            					  <select class="form-control select select2" style="width: 100%;">
+            						  <option value="" selected="selected">Start typing...</option>
+            						  <option value="">Nike Running</option>
+            						  <option value="">Photo shoots in L.A.</option>
+            					  </select>
+            				  </div>
+            				</div>
+            				<div class="tab-pane" id="existingCampaign">
+            					<div class="form-group label-static">
+            						<label class="control-label">Campaign Title</label>
+            						<input type="title" class="form-control" placeholder="" style="margin-bottom:-1px;">
+            					</div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="row">
+            		<div class="col-md-12 text-center">
+            			<button class="btn btn-primary btn-round" data-dismiss="modal">Add to Campaign</button>
+            		</div>
+            	</div>
             </div>
         </div>
     </div>
