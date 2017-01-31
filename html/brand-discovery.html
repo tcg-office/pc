@@ -104,7 +104,7 @@
                     </li>
                     <li>
                         <a href="brand-discovery.html" class="btn btn-raised btn-primary btn-round">
-                            <i class="material-icons">explore</i>
+                            <i class="material-icons">people</i>
                             Influencers
                         </a>
                     </li>
@@ -483,185 +483,349 @@
                     <div class="col-md-4">
                         <ul class="nav nav-pills nav-stacked">
                             <li class="active">
-                                <a href="#tab1" data-toggle="tab" aria-expanded="true">Profile</a>
+                               <a href="#tab1" data-toggle="tab" aria-expanded="true">Profile</a>
                             </li>
                             <li class="">
-                                <a href="#tab4" data-toggle="tab" aria-expanded="false">Category</a>
+                                <a href="#tab2" data-toggle="tab" aria-expanded="false">Category</a>
                             </li>
                             <li class="">
-                                <a href="#tab5" data-toggle="tab" aria-expanded="false">Followers</a>
+                                <a href="#tab3" data-toggle="tab" aria-expanded="false">Followers</a>
                             </li>
                             <li class="">
-                                <a href="#tab6" data-toggle="tab" aria-expanded="false">Location</a>
+                                <a href="#tab4" data-toggle="tab" aria-expanded="false">Location</a>
                             </li>
                             <li class="">
-                                <a href="#tab7" data-toggle="tab" aria-expanded="false">Tags</a>
+                                <a href="#tab5" data-toggle="tab" aria-expanded="false">Tags</a>
                             </li>
                             <li class="">
-                                <a href="#tab7" data-toggle="tab" aria-expanded="false">Brands</a>
+                                <a href="#tab6" data-toggle="tab" aria-expanded="false">Brands</a>
                             </li>
                             <li class="">
                                 <a href="#tab7" data-toggle="tab" aria-expanded="false">Post Price</a>
                             </li>
-
+                            <li class="">
+                                <a href="#tab8" data-toggle="tab" aria-expanded="false">Household</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-8">
+
                         <div class="tab-content">
+
                             <div class="tab-pane active" id="tab1">
                                 <h6>Age</h6>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group label-static">
-                                            <label class="control-label">From <small>(must be over 18)</small></label>
-                                            <input type="text" class="form-control" value="18">
-                                        </div>
+                                        <div class="form-group label-static is-empty">
+                                            <label class="control-label">From
+                                                <small>(must be over 18)</small>
+                                            </label>
+                                            <input type="text" name="age_from" class="form-control age" value="">
+
+                                            <span class="material-input"></span></div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group label-static">
+                                        <div class="form-group label-static is-empty">
                                             <label class="control-label">To</label>
-                                            <input type="text" class="form-control" value="70">
-                                        </div>
+                                            <input type="text" name="age_to" class="form-control age" value="">
+
+                                            <span class="material-input"></span></div>
                                     </div>
                                 </div>
+
                                 <h6>Gender</h6>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" name="gender" value="male" checked="true">Male
+                                                <input type="radio" class="gender" name="gender" value="male"><span class="circle"></span><span class="check"></span>Male
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" name="gender" value="female">Female
+                                                <input type="radio" class="gender" name="gender" value="female"><span class="circle"></span><span class="check"></span>Female
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" name="gender" value="any">Any
+                                                <input type="radio" class="gender" name="gender" value="any" checked="checked"><span class="circle"></span><span class="check"></span>Any
                                             </label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                    <div class="form-group">
-                                        <h6>Ethnicity</h6>
-                                        <select class="form-control select select2_multiple" multiple="multiple" style="width: 100%;">
-                                            <option value="">Hispanic or Latino origin</option>
-                                            <option value="">White Americans or Caucasian</option>
-                                            <option value="">Black or African American</option>
-                                            <option value="">Asian or Asian American</option>
-                                            <option value="">Native Americans and Alaska Native</option>
-                                            <option value="">Native Hawaiians and other Pacific Islander</option>
-                                        </select>
-                                    </div>
+                                        <div class="form-group">
+                                            <h6>Ethnicity</h6>
+                                            <select name="ethnicity[]" class="select2_multiple form-control ethnicity select2-hidden-accessible" multiple="" data-placeholder="Start typing..." style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                                <option value="1">Hispanic or Latino origin</option>
+                                                <option value="2">White Americans or Caucasian</option>
+                                                <option value="3">Black or African American</option>
+                                                <option value="4">Asian or Asian American</option>
+                                                <option value="5">Native Americans and Alaska Native</option>
+                                                <option value="6">Native Hawaiians and other Pacific Islander</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab2">
-                                <div class="form-group label-static">
-                                    <label class="control-label">Ethnicity</label>
-                                    <select class="form-control select select2_multiple" multiple="multiple" style="width: 100%;">
-                                        <option value="">Hispanic or Latino origin</option>
-                                        <option value="">White Americans or Caucasian</option>
-                                        <option value="">Black or African American</option>
-                                        <option value="">Asian or Asian American</option>
-                                        <option value="">Native Americans and Alaska Native</option>
-                                        <option value="">Native Hawaiians and other Pacific Islander</option>
-                                    </select>
+                                <div class="col-md-12">
+                                    <div class="form-group label-static">
+                                        <label class="control-label">Category</label>
+
+                                        <select name="categories[]" class="select2_multiple form-control categories select2-hidden-accessible" multiple="" data-placeholder="Start typing..." style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option value="1">Digital Influencer</option>
+                                            <option value="2">Beauty and Fashion</option>
+                                            <option value="3">Food</option>
+                                            <option value="4">Business</option>
+                                            <option value="5">Education</option>
+                                            <option value="6">News</option>
+                                            <option value="7">Politics</option>
+                                            <option value="8">Pets</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab3">
+                                <h4><i class="fa fa-facebook-square"></i> Number of Facebook followers</h4>
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="gender" value="male" checked="true">Male
-                                            </label>
-                                        </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-static is-empty">
+                                            <label class="control-label">At least</label>
+                                            <input type="text" name="followers_from" class="form-control followers" value="">
+                                            <span class="material-input"></span></div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="gender" value="female">Female
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="gender" value="any">Any
-                                            </label>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-static is-empty">
+                                            <label class="control-label">Limit to</label>
+                                            <input type="text" class="form-control followers" name="followers_to" value="">
+                                            <span class="material-input"></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab4">
-                                <div class="col-md-12">
-                                    <div class="form-group label-static">
-                                        <label class="control-label">Category</label>
-                                        <select class="select2_multiple form-control" multiple="multiple" style="width: 100%;">
-                                            <option value="tv-film" selected="selected">TV/Film</option>
-                                            <option>Digital Influencer</option>
-                                            <option>Sports</option>
-                                            <option>Beauty and Fashion</option>
-                                            <option>Food</option>
-                                            <option>Business</option>
-                                            <option>Education</option>
-                                            <option>News</option>
-                                            <option>Politics</option>
-                                            <option>Pets</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab5">
-                                <h4><i class="fa fa-facebook-square"></i> Number of Facebook followers</h4>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group label-static">
-                                            <label class="control-label">At least</label>
-                                            <input type="text" class="form-control" value="10000">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group label-static">
-                                            <label class="control-label">Limit to</label>
-                                            <input type="text" class="form-control" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tab6">
                                 <div class="row">
                                     <div class="form-group label-static">
                                         <label class="control-label">State</label>
-                                        <select class="form-control select2_multiple" multiple="multiple" style="width: 100%;">
-                                            <option>Alabama</option>
-                                            <option>Alaska</option>
-                                            <option>California</option>
-                                            <option>Delaware</option>
-                                            <option>Tennessee</option>
-                                            <option>Texas</option>
-                                            <option>Washington</option>
-                                            <option>Colorado</option>
+                                        <select name="states[]" class="select2_multiple form-control states select2-hidden-accessible" multiple="" data-placeholder="Start typing..." style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option value="1">Alabama</option>
+                                            <option value="2">Alaska</option>
+                                            <option value="3">American Samoa</option>
+                                            <option value="4">Arizona</option>
+                                            <option value="5">Arkansas</option>
+                                            <option value="6">California</option>
+                                            <option value="7">Colorado</option>
+                                            <option value="8">Connecticut</option>
+                                            <option value="9">Delaware</option>
+                                            <option value="10">District Of Columbia</option>
+                                            <option value="11">Federated States Of Micronesia</option>
+                                            <option value="12">Florida</option>
+                                            <option value="13">Georgia</option>
+                                            <option value="14">Guam</option>
+                                            <option value="15">Hawaii</option>
+                                            <option value="16">Idaho</option>
+                                            <option value="17">Illinois</option>
+                                            <option value="18">Indiana</option>
+                                            <option value="19">Iowa</option>
+                                            <option value="20">Kansas</option>
+                                            <option value="21">Kentucky</option>
+                                            <option value="22">Louisiana</option>
+                                            <option value="23">Maine</option>
+                                            <option value="24">Marshall Islands</option>
+                                            <option value="25">Maryland</option>
+                                            <option value="26">Massachusetts</option>
+                                            <option value="27">Michigan</option>
+                                            <option value="28">Minnesota</option>
+                                            <option value="29">Mississippi</option>
+                                            <option value="30">Missouri</option>
+                                            <option value="31">Montana</option>
+                                            <option value="32">Nebraska</option>
+                                            <option value="33">Nevada</option>
+                                            <option value="34">New Hampshire</option>
+                                            <option value="35">New Jersey</option>
+                                            <option value="36">New Mexico</option>
+                                            <option value="37">New York</option>
+                                            <option value="38">North Carolina</option>
+                                            <option value="39">North Dakota</option>
+                                            <option value="40">Northern Mariana Islands</option>
+                                            <option value="41">Ohio</option>
+                                            <option value="42">Oklahoma</option>
+                                            <option value="43">Oregon</option>
+                                            <option value="44">Palau</option>
+                                            <option value="45">Pennsylvania</option>
+                                            <option value="46">Puerto Rico</option>
+                                            <option value="47">Rhode Island</option>
+                                            <option value="48">South Carolina</option>
+                                            <option value="49">South Dakota</option>
+                                            <option value="50">Tennessee</option>
+                                            <option value="51">Texas</option>
+                                            <option value="52">Utah</option>
+                                            <option value="53">Vermont</option>
+                                            <option value="54">Virgin Islands</option>
+                                            <option value="55">Virginia</option>
+                                            <option value="56">Washington</option>
+                                            <option value="57">West Virginia</option>
+                                            <option value="58">Wisconsin</option>
+                                            <option value="59">Wyoming</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-static">
+                                        <label class="control-label">City</label>
+                                        <input type="text" class="form-control" value="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-static">
+                                        <label class="control-label">Zip</label>
+                                        <input type="text" class="form-control" >
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group label-static">
                                         <label class="control-label">Country</label>
                                         <input type="text" class="form-control" value="United States" disabled="disabled">
+                                        <span class="material-input"></span></div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tab5">
+                                <div class="col-md-12">
+                                    <div class="form-group label-static">
+                                        <label class="control-label">Tags</label>
+
+                                        <select name="tags[]" class="select2_multiple form-control tags select2-hidden-accessible" multiple="" data-placeholder="Start typing..." style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option value="1">Irish</option>
+                                            <option value="2">Paris</option>
+                                            <option value="3">Playwright</option>
+                                            <option value="4">Genius</option>
+                                            <option value="5">France</option>
+                                            <option value="6">Poet</option>
+                                            <option value="7">Aestheticism</option>
+                                            <option value="8">Comedy</option>
+                                            <option value="9">Theater</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
+                            <div class="tab-pane" id="tab6">
+                                <div class="col-md-12">
+                                    <div class="form-group label-static">
+                                        <label class="control-label">Brands</label>
+
+                                        <select name="brands[]" class="select2_multiple form-control brands select2-hidden-accessible" multiple="" data-placeholder="Start typing..." style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option value="1">nike </option>
+                                            <option value="2">adidas</option>
+                                            <option value="3">vbds</option>
+                                            <option value="4">apple</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab7">
+                                <h4><i class="fa fa-facebook-square"></i> Post price</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group label-static is-empty">
+                                            <label class="control-label">At least</label>
+                                            <input type="text" name="post_price_from" class="form-control post_price" value="">
+                                            <span class="material-input"></span></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group label-static is-empty">
+                                            <label class="control-label">Limit to</label>
+                                            <input type="text" class="form-control post_price" name="post_price_to" value="">
+                                            <span class="material-input"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab8">
+
+                                <h6>Marital status</h6>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="marital" name="marital" value="married"><span class="circle"></span><span class="check"></span>Married
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="marital" name="marital" value="notmarried"><span class="circle"></span><span class="check"></span>Not Married
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="marital" name="marital" value="any" checked="checked"><span class="circle"></span><span class="check"></span>Any
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6>Children</h6>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="children" name="children" value="haschildren"><span class="circle"></span><span class="check"></span>Parent
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="children" name="children" value="nochildren"><span class="circle"></span><span class="check"></span>Not Children
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="children" name="children" value="any" checked="checked"><span class="circle"></span><span class="check"></span>Any
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6>Pets</h6>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="pets" name="pets" value="haspets"><span class="circle"></span><span class="check"></span>Pet owner
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="pets" name="pets" value="nopets"><span class="circle"></span><span class="check"></span>No pets
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="pets" name="pets" value="any" checked="checked"><span class="circle"></span><span class="check"></span>Any
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
