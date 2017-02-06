@@ -55,6 +55,22 @@
         .select2-container--default.select2-container--focus .select2-selection--multiple {
             border: 1px solid #ccc; }
         /** /Select2 **/
+
+        /** Sidemenu dropdown extension **/
+        .active ul.dropdown-menu a {
+            background: transparent !important;
+            box-shadow: none !important;
+            font-weight: 300;
+        }
+
+        ul.dropdown-menu li a:hover {
+            background-color: #EEEEEE !important;
+        }
+
+        .table .td-actions {
+            display: table-cell;
+        }
+        /** /Sidemenu dropdown extension **/
     </style>
 
     <link rel="stylesheet" href="../../assets/vendors/jquery.tagsinput/src/bootstrap-tagsinput.css">
@@ -104,11 +120,25 @@
                         <p>Messages</p><span class="indicator">1</span>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="inf-settings.html">
+                <li class="dropdown active">
+                    <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="material-icons">settings</i>
-                        <p>Account settings</p>
+                        <p>Settings</p>
                     </a>
+                    <ul class="dropdown-menu" style="width:100%; box-shadow:none; background: transparent;">
+                        <li>
+                            <a href="inf-acc-billing.html">
+                                <i class="material-icons">monetization_on</i>
+                                <p>Billing</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="inf-settings.html">
+                                <i class="material-icons">account_circle</i>
+                                <p>Account Settings</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
