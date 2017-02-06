@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="../../assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Brand Name - Account Settings</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap core CSS     -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--  Material Dashboard CSS    -->
+    <link href="../../assets/css/material-dashboard.css" rel="stylesheet"/>
+    <!--<link href="../assets/css/material-dashboard-pro.css" rel="stylesheet"/>-->
+
+    <!-- Bootstrap Select-->
+    <link href="../../assets/css/bootstrap-select.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap TagsInput-->
+    <link href="../../assets/css/bootstrap-tagsinput.css" rel="stylesheet" />
+
+    <link href="../../assets/css/base.css" rel="stylesheet" />
+    <!--<link href="../assets/css/card.css" rel="stylesheet" />-->
+
+    <!-- end meta -->
+    <!-- Select2 -->
+    <link href="../../assets/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        /** Select2 **/
+        .select2-container--default .select2-selection--single,
+        .select2-container--default .select2-selection--multiple {
+            background-color: #fff;
+            border-width: 0px 0px 1px 0px;
+            border-radius: 0;
+            border-color: #ccc;
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            min-height: 35px; }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #23527c;  }
+
+        .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+            padding-top: 3px; }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 36px; }
+
+        .select2-container--default .select2-selection--multiple .select2-selection__choice,
+        .select2-container--default .select2-selection--multiple .select2-selection__clear {
+            margin-top: 2px;
+            border: none;
+            border-radius: 0;
+            padding: 3px 5px; }
+
+        .select2-container--default.select2-container--focus .select2-selection--multiple {
+            border: 1px solid #ccc; }
+        /** /Select2 **/
+    </style>
+
+    <style type="text/css">
+        .table .td-actions {
+            display: table-cell;
+        }
+
+        .content {
+            padding: 30px 15px;
+            min-height: calc(100% - 123px);
+        }
+
+        .navbar.navbar-transparent {
+            padding:0;
+        }
+    </style>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-default" style="margin-bottom: 0px;">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown">
+                            <a href="#pablo" class="profile-photo dropdown-toggle" data-toggle="dropdown">
+                                <div class="profile-photo-small">
+                                    <img src="../../assets/img/faces/oscar.jpg" alt="Circle Image" class="img-rounded img-responsive">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="navbar-brand"> Brand Name</li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="brand-dashboard.html">
+                                <i class="material-icons">dashboard</i>Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="brand-discovery.html">
+                                <i class="material-icons">people</i>
+                                Influencers
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="material-icons">star</i>
+                                Campaigns
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#pablo">New Campaign</a>
+                                </li>
+                                <li>
+                                    <a href="#pablo">Manage Campaigns</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="brand-messages-inbox.html">
+                                <i class="material-icons">email</i>
+                                Messages<span class="indicator">5</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#pablo" class="dropdown-toggle btn btn-raised btn-primary btn-round" data-toggle="dropdown">
+                                <i class="material-icons">settings</i>
+                                Settings
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#pablo">
+                                        <i class="material-icons">monetization_on</i>
+                                        Billing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pablo">
+                                        <i class="material-icons">account_circle</i>
+                                        Account Settings
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#pablo">
+                                <i class="material-icons">exit_to_app</i>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-->
+        </nav>
+        <!-- end header -->
+        <div class="content" style="padding-top:20px;">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-transparent">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">Account Settings</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="margin-top:0px;">
+                            <div class="card-content">
+                                <form action="inf-dashboard.html" method="post">
+                                    <div class="row">
+                                        <div class="col-md-12"><h5><i class="material-icons">account_circle</i> Account access details</h5></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Email address <small>(required)</small></label>
+                                                <input type="email" class="form-control" value="oscar@email.co.uk" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Password</label>
+                                                <input type="password" class="form-control" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <blockquote><p>Your password will remain unchanged as long as you leave both password and confirm password fields intact.</p></blockquote>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Confirm Password</label>
+                                                <input type="password" class="form-control" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><h5><i class="material-icons">contact_mail</i> Contact Information</h5></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Contact Phone</label>
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Reserve Email address <small>(required)</small></label>
+                                                <input name="reserve_email" type="email" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><h5><i class="material-icons">monetization_on</i> Billing Information</h5></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">First Name <small>(required)</small></label>
+                                                <input type="text" class="form-control" value="Oscar">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Last Name</label>
+                                                <input type="text" class="form-control" value="Wilde" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12"><h5><i class="material-icons">location_on</i> Billing Address</h5></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Street</label>
+                                                <input type="text" class="form-control" value="28201 E. Bonanza St.">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">City</label>
+                                                <input type="text" class="form-control" value="South Park">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Zip</label>
+                                                <input type="text" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">State</label>
+                                                <select class="form-control select select2" style="width: 100%;">
+                                                    <option value="" selected="selected">Start typing...</option>
+                                                    <option>Alabama</option>
+                                                    <option>Alaska</option>
+                                                    <option>California</option>
+                                                    <option>Delaware</option>
+                                                    <option>Tennessee</option>
+                                                    <option>Texas</option>
+                                                    <option>Washington</option>
+                                                    <option>Colorado</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group label-static">
+                                                <label class="control-label">Country</label>
+                                                <input type="text" class="form-control" value="United States" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer-white">
+            <div class="container">
+                <a class="footer-brand" href="#">PageCeleb</a>
+
+                <ul class="pull-center">
+                    <li>
+                        <a href="#">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms and Conditions
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="social-buttons pull-right">
+                    <li>
+                        <a href="#">&copy; 2017 - All rights reserved.</a>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </div>
+<!--   Core JS Files   -->
+<script src="../../assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/js/material.min.js" type="text/javascript"></script>
+
+<!--  Notifications Plugin    -->
+<script src="../../assets/js/bootstrap-notify.js"></script>
+
+<!-- Material Dashboard javascript methods -->
+<script src="../../assets/js/material-dashboard.js"></script>
+
+<!-- Bootstrap TagsInput-->
+<script src="../../assets/js/bootstrap-tagsinput.min.js"></script>
+
+<!-- Select Plugin -->
+<script src="../../assets/js/bootstrap-select.min.js"></script>
+
+<script>
+    //    Activate bootstrap-select
+    if($(".selectpicker").length != 0){
+        $('.selectpicker').selectpicker({
+            style: 'btn btn-primary'
+        });
+    }
+
+    // Active filters
+    var act_filters = $('#active-filters');
+
+</script>
+
+<!-- Select2 -->
+<script src="../../assets/vendors/select2/dist/js/select2.full.min.js"></script>
+
+<!-- Select2 -->
+<script>
+    $(document).ready(function() {
+        $(".select2_multiple").select2({
+            maximumSelectionLength: 20,
+//                placeholder: "With Max Selection limit 20",
+            allowClear: true
+        });
+    });
+    $(".select2").select2();
+</script>
+<!-- /Select2 -->
+
+<!-- end footer-js-->
+</body>
+</html>
+
+<!-- end inf-footer -->
